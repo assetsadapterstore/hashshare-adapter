@@ -114,28 +114,28 @@ func TestGetTxIDsInMemPool(t *testing.T) {
 	t.Logf("GetTxIDsInMemPool = %v \n", txids)
 }
 
-func TestBTCBlockScanner_scanning(t *testing.T) {
-
-	//accountID := "WDHupMjR3cR2wm97iDtKajxSPCYEEddoek"
-	//address := "miphUAzHHeM1VXGSFnw6owopsQW3jAQZAk"
-
-	//wallet, err := tw.GetWalletInfo(accountID)
-	//if err != nil {
-	//	t.Errorf("BTCBlockScanner_scanning failed unexpected error: %v\n", err)
-	//	return
-	//}
-
-	bs := tw.Blockscanner
-
-	//bs.DropRechargeRecords(accountID)
-
-	bs.SetRescanBlockHeight(1384586)
-	//tw.SaveLocalNewBlock(1355030, "00000000000000125b86abb80b1f94af13a5d9b07340076092eda92dade27686")
-
-	//bs.AddAddress(address, accountID)
-
-	bs.ScanBlockTask()
-}
+//func TestBTCBlockScanner_scanning(t *testing.T) {
+//
+//	//accountID := "WDHupMjR3cR2wm97iDtKajxSPCYEEddoek"
+//	//address := "miphUAzHHeM1VXGSFnw6owopsQW3jAQZAk"
+//
+//	//wallet, err := tw.GetWalletInfo(accountID)
+//	//if err != nil {
+//	//	t.Errorf("BTCBlockScanner_scanning failed unexpected error: %v\n", err)
+//	//	return
+//	//}
+//
+//	bs := tw.Blockscanner
+//
+//	//bs.DropRechargeRecords(accountID)
+//
+//	bs.SetRescanBlockHeight(1384586)
+//	//tw.SaveLocalNewBlock(1355030, "00000000000000125b86abb80b1f94af13a5d9b07340076092eda92dade27686")
+//
+//	//bs.AddAddress(address, accountID)
+//
+//	bs.ScanBlockTask()
+//}
 
 func TestBTCBlockScanner_Run(t *testing.T) {
 
@@ -204,10 +204,10 @@ func TestGetUnscanRecords(t *testing.T) {
 	}
 }
 
-func TestBTCBlockScanner_RescanFailedRecord(t *testing.T) {
-	bs := tw.Blockscanner
-	bs.RescanFailedRecord()
-}
+//func TestBTCBlockScanner_RescanFailedRecord(t *testing.T) {
+//	bs := tw.Blockscanner
+//	bs.RescanFailedRecord()
+//}
 
 func TestFullAddress (t *testing.T) {
 
